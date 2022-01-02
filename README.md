@@ -1,2 +1,2 @@
-# Containerization_using_Docker_and_Portainer
+# Containerization using Docker and Portainer
 My Containerization setup using Docker and Portainer
