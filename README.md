@@ -70,6 +70,15 @@ replace ip-address with your servers ip, you can get your servers ip by doing
 ### Look at the docker-compose.yml
 
 
+# GUACAMOLE
+
+`mkdir /home/autiboy/guacamole`
+
+`mkdir /home/autiboy/guacamole/config`
+
+`docker pull oznu/guacamole`
+
+
 # REMOTELY
 
 `mkdir /home/autiboy/remotely`
