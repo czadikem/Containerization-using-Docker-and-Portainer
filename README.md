@@ -59,115 +59,115 @@ replace ip-address with your servers ip, you can get your servers ip by doing
 ### name it
 `containerization`
 
+### paste the docker-compose.yml text into the text box in portainer
 
 
+# WATCHTOWER
 
-WATCHTOWER
-
-just use the above to deploy it
-
-
-REMOTELY
-
-mkdir /home/autiboy/remotely
-
-mkdir /home/autiboy/remotely/data
-
-docker pull translucency/remotely
+### Look at the docker-compose.yml
 
 
-TANDOOR-RECIPES
+# REMOTELY
 
-mkdir /home/autiboy/tandoor-recipes
+`mkdir /home/autiboy/remotely`
 
-mkdir /home/autiboy/tandoor-recipes/postgresql
+`mkdir /home/autiboy/remotely/data`
 
-mkdir /home/autiboy/tandoor-recipes/staticfiles
-
-mkdir /home/autiboy/tandoor-recipes/mediafiles
-
-replace YOUR_SECRET_KEY with the  key from
-base64 /dev/urandom | head -c50
-
-replace YOUR_POSTGRES_SECRET_KEY with the  key from
-base64 /dev/urandom | head -c50
-
-docker pull vabene1111/recipes
+`docker pull translucency/remotely`
 
 
-AIRSONIC_ADVANCED
+# TANDOOR-RECIPES
 
-mkdir /home/autiboy/airsonic-advanced
+`mkdir /home/autiboy/tandoor-recipes`
 
-mkdir /home/autiboy/airsonic-advanced/playlists
+`mkdir /home/autiboy/tandoor-recipes/postgresql`
 
-mkdir /home/autiboy/airsonic-advanced/podcasts
+`mkdir /home/autiboy/tandoor-recipes/staticfiles`
 
-mkdir /home/autiboy/airsonic-advanced/data
+`mkdir /home/autiboy/tandoor-recipes/mediafiles`
 
-mkdir /home/autiboy/airsonic-advanced/music
+### replace YOUR_SECRET_KEY with the key you get from below
+`base64 /dev/urandom | head -c50`
 
-docker pull airsonic-advanced
+### replace YOUR_POSTGRES_SECRET_KEY with the key you get from below
+`base64 /dev/urandom | head -c50`
 
-
-JELLYFIN
-
-mkdir /home/autiboy/jellyfin
-
-mkdir /home/autiboy/jellyfin/library
-
-mkdir /home/autiboy/jellyfin/tvseries
-
-mkdir /home/autiboy/jellyfin/movies
-
-docker pull lscr.io/linuxserver/jellyfin
+`docker pull vabene1111/recipes`
 
 
-NEXTCLOUD
+# AIRSONIC_ADVANCED
 
-mkdir /home/autiboy/nextcloud
+`mkdir /home/autiboy/airsonic-advanced`
 
-mkdir /home/autiboy/nextcloud/appdata
+`mkdir /home/autiboy/airsonic-advanced/playlists`
 
-mkdir /home/autiboy/nextcloud/data
+`mkdir /home/autiboy/airsonic-advanced/podcasts`
 
-docker pull lscr.io/linuxserver/nextcloud
+`mkdir /home/autiboy/airsonic-advanced/data`
 
+`mkdir /home/autiboy/airsonic-advanced/music`
 
-SONARR
-
-mkdir /home/autiboy/sonarr
-
-mkdir /home/autiboy/sonarr/data
-
-mkdir /home/autiboy/sonarr/tvseries
-
-mkdir /home/autiboy/sonarr/downloadclient-downloads
-
-docker pull lscr.io/linuxserver/sonarr
+`docker pull airsonic-advanced`
 
 
-RADARR
+# JELLYFIN
 
-mkdir /home/autiboy/radarr/
+`mkdir /home/autiboy/jellyfin`
 
-mkdir /home/autiboy/radarr/data
+`mkdir /home/autiboy/jellyfin/library`
 
-mkdir /home/autiboy/radarr/movies
+`mkdir /home/autiboy/jellyfin/tvseries`
 
-mkdir /home/autiboy/radarr/downloadclient-downloads
+`mkdir /home/autiboy/jellyfin/movies`
 
-docker pull lscr.io/linuxserver/radarr
+`docker pull lscr.io/linuxserver/jellyfin`
 
 
-LIDARR
+# NEXTCLOUD
 
-mkdir /home/autiboy/lidarr/
+`mkdir /home/autiboy/nextcloud`
 
-mkdir /home/autiboy/lidarr/data
+`mkdir /home/autiboy/nextcloud/appdata`
 
-mkdir /home/autiboy/lidarr/music
+`mkdir /home/autiboy/nextcloud/data`
 
-mkdir /home/autiboy/lidarr/downloadclient-downloads
+`docker pull lscr.io/linuxserver/nextcloud`
 
-docker pull lscr.io/linuxserver/lidarr
+
+# SONARR
+
+`mkdir /home/autiboy/sonarr`
+
+`mkdir /home/autiboy/sonarr/data`
+
+`mkdir /home/autiboy/sonarr/tvseries`
+
+`mkdir /home/autiboy/sonarr/downloadclient-downloads`
+
+`docker pull lscr.io/linuxserver/sonarr`
+
+
+# RADARR
+
+`mkdir /home/autiboy/radarr/`
+
+`mkdir /home/autiboy/radarr/data`
+
+`mkdir /home/autiboy/radarr/movies`
+
+`mkdir /home/autiboy/radarr/downloadclient-downloads`
+
+`docker pull lscr.io/linuxserver/radarr`
+
+
+# LIDARR
+
+`mkdir /home/autiboy/lidarr/`
+
+`mkdir /home/autiboy/lidarr/data`
+
+`mkdir /home/autiboy/lidarr/music`
+
+`mkdir /home/autiboy/lidarr/downloadclient-downloads`
+
+`docker pull lscr.io/linuxserver/lidarr`
