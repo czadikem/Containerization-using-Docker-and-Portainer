@@ -14,6 +14,19 @@ services:
     restart: unless-stopped
 
 
+  # A Docker Container for Apache Guacamole, a client-less remote desktop gateway. It supports standard protocols like
+  # VNC, RDP, and SSH over HTML5.
+  
+  guacamole:
+    image: oznu/guacamole
+    container_name: guacamole
+    volumes:
+      - /home/autiboy/guacamole/config:/config
+    ports:
+      - 8080:8080
+    restart: unless-stopped
+    
+    
   # Remotely A remote control and remote scripting solution, built with .NET 5, Blazor, SignalR Core, and WebRTC.
 
   remotely:
