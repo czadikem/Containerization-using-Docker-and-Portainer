@@ -121,6 +121,30 @@ replace ip-address with your servers ip, you can get your servers ip by doing
 
 `docker pull airsonic-advanced`
 
+### go to ip-address:4040 login with
+
+`admin` `admin`
+
+### go to settings, users
+
+### click add user, tick all the boxes, and set username, password, email
+
+### logout and login as the user you just created
+
+### make sure that user is an admin
+
+### logout and login as the user admin
+
+`admin` `admin`
+
+### click settings, credentials, add credentials
+
+### add some sort of password and click save
+
+### tick the old password and save
+
+### now you don't have to worry about the admin account anymore "you can't login to it anymore either"
+
 
 # JELLYFIN
 
