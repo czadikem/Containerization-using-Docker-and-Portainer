@@ -146,17 +146,11 @@ replace ip-address with your servers ip, you can get your servers ip by doing
 
 ### make sure that user is an admin
 
-### logout and login as the user admin
-
-`admin` `admin`
-
-### click settings, credentials, add credentials
+### click settings users admin
 
 ### add some sort of password and click save
 
-### tick the old password and save
-
-### now you don't have to worry about the admin account anymore "you can't login to it anymore either"
+### tick the old password under credentials and save
 
 
 # JELLYFIN
