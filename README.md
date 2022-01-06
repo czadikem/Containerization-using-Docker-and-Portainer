@@ -70,6 +70,19 @@ replace ip-address with your servers ip, you can get your servers ip by doing
 ### Look at the docker-compose.yml
 
 
+# NGINX-PROXY-MANAGER
+
+`mkdir /home/autiboy/nginx-proxy-manager`
+
+`mkdir /home/autiboy/nginx-proxy-manager/data`
+
+`mkdir /home/autiboy/nginx-proxy-manager/letsencrypt`
+
+`mkdir /home/autiboy/nginx-proxy-manager/ssl-nginx`
+
+`docker pull jc21/nginx-proxy-manager`
+
+
 # GUACAMOLE
 
 `mkdir /home/autiboy/guacamole`
