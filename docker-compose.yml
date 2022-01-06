@@ -14,6 +14,31 @@ services:
     restart: unless-stopped
 
 
+  # Docker container for managing Nginx proxy hosts with a simple, powerful interface 
+  
+  nginx-proxy-manager:
+    image: jc21/nginx-proxy-manager
+    container_name: nginx-proxy-manager
+    # Uncomment the next line if you uncomment anything in the section
+    environment:
+      # Uncomment this if you want to change the location of 
+      # the SQLite DB file within the container
+      # DB_SQLITE_FILE: /data/database.sqlite
+
+      # Uncomment this if IPv6 is not enabled on your host
+      - DISABLE_IPV6=true
+    volumes:
+      - /home/autiboy/nginx-proxy-manager/data:/data
+      - /home/autiboy/nginx-proxy-manager/letsencrypt:/etc/letsencrypt
+    ports:
+      # These ports are in format <host-port>:<container-port>
+      - 80:80 # Public HTTP Port
+      - 443:443 # Public HTTPS Port
+      - 81:81 # Admin Web Port
+      # Add any other Stream port you want to expose
+      # - 21:21 # FTP
+    restart: unless-stopped
+
   # A Docker Container for Apache Guacamole, a client-less remote desktop gateway. It supports standard protocols like
   # VNC, RDP, and SSH over HTML5.
   
@@ -93,7 +118,7 @@ services:
       - /home/autiboy/tandoor-recipes/staticfiles:/opt/recipes/staticfiles
       - /home/autiboy/tandoor-recipes/mediafiles:/opt/recipes/mediafiles
     ports:
-      - 80:8080
+      - 82:8080
     restart: unless-stopped
 
 
@@ -162,7 +187,7 @@ services:
       - /home/autiboy/nextcloud/appdata:/config
       - /home/autiboy/nextcloud/data:/data
     ports:
-      - 443:443
+      - 444:443
     restart: unless-stopped
 
 
