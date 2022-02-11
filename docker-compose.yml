@@ -7,7 +7,7 @@ services:
   # existing container and restart it with the same options that were used when it was deployed initially.
 
   watchtower:
-    image: containrrr/watchtower
+    image: containrrr/watchtower:latest
     container_name: watchtower
     volumes:
       - /var/run/docker.sock:/var/run/docker.sock
@@ -17,7 +17,7 @@ services:
   # Docker container for managing Nginx proxy hosts with a simple, powerful interface 
   
   nginx-proxy-manager:
-    image: jc21/nginx-proxy-manager
+    image: jc21/nginx-proxy-manager:latest
     container_name: nginx-proxy-manager
     # Uncomment the next line if you uncomment anything in the section
     environment:
@@ -43,7 +43,7 @@ services:
   # VNC, RDP, and SSH over HTML5.
   
   guacamole:
-    image: oznu/guacamole
+    image: oznu/guacamole:latest
     container_name: guacamole
     volumes:
       - /home/autiboy/guacamole/config:/config
@@ -55,7 +55,7 @@ services:
   # Remotely A remote control and remote scripting solution, built with .NET 5, Blazor, SignalR Core, and WebRTC.
 
   remotely:
-    image: translucency/remotely
+    image: translucency/remotely:latest
     container_name: remotely
     volumes:
       - /home/autiboy/remotely/data:/remotely-data
@@ -93,7 +93,7 @@ services:
     restart: unless-stopped
   #web_recipes for tandoor
   tandoor-web_recipes:
-    image: vabene1111/recipes
+    image: vabene1111/recipes:latest
     container_name: tandoor-web_recipes
     depends_on:
       - tandoor-db_recipes
@@ -127,7 +127,7 @@ services:
   # supersedes several features in Airsonic.
 
   airsonic-advanced:
-    image: airsonicadvanced/airsonic-advanced
+    image: airsonicadvanced/airsonic-advanced:latest
     container_name: airsonic-advanced
     user: 1000:1000 #optional - run container as user
     environment:
@@ -152,7 +152,7 @@ services:
   # joining us in our quest!
 
   jellyfin:
-    image: lscr.io/linuxserver/jellyfin
+    image: lscr.io/linuxserver/jellyfin:latest
     container_name: jellyfin
     environment:
       - PUID=1000
@@ -178,7 +178,7 @@ services:
   # on that FTP drive at the office, a Dropbox or a NAS you have at home.
 
   nextcloud:
-    image: lscr.io/linuxserver/nextcloud
+    image: lscr.io/linuxserver/nextcloud:latest
     container_name: nextcloud
     environment:
       - PUID=1000
@@ -197,7 +197,7 @@ services:
   # upgrade the quality of files already downloaded when a better quality format becomes available.
 
   sonarr:
-    image: lscr.io/linuxserver/sonarr
+    image: lscr.io/linuxserver/sonarr:latest
     container_name: sonarr
     environment:
       - PUID=1000
@@ -215,7 +215,7 @@ services:
   # Radarr - A fork of Sonarr to work with movies
 
   radarr:
-    image: lscr.io/linuxserver/radarr
+    image: lscr.io/linuxserver/radarr:latest
     container_name: radarr
     environment:
       - PUID=1000
@@ -235,7 +235,7 @@ services:
   # quality of files already downloaded when a better quality format becomes available.
 
   lidarr:
-    image: lscr.io/linuxserver/lidarr
+    image: lscr.io/linuxserver/lidarr:latest
     container_name: lidarr
     environment:
       - PUID=1000
