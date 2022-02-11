@@ -82,6 +82,14 @@ replace ip-address with your servers ip, you can get your servers ip by doing
 
 `docker pull jc21/nginx-proxy-manager`
 
+### Login
+
+#### Email:
+`admin@example.com`
+
+#### Password:
+`changeme`
+
 
 # GUACAMOLE
 
